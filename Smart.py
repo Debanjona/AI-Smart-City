@@ -1,7 +1,7 @@
 import cv2
 
 # Load the video feed from the traffic camera
-cap = cv2.VideoCapture('traffic_cam_feed.mp4')
+cap = cv2.VideoCapture('traffic cam feed.mp4')
 
 # Define the object detection model
 object_detector = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=40)
@@ -30,8 +30,8 @@ while True:
     # Display the processed frame
     cv2.imshow('Traffic Management', frame)
 
-    # Exit if the user presses the 'q' key
-    if cv2.waitKey(1) == ord('q'):
+    # Exit if the user presses the 'g' key
+    if cv2.waitKey(1) == ord('g'):
         break
 
 # Release the video feed and close all windows
